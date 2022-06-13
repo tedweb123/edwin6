@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documento sin título</title>
+
+   <!--reglas CSS de entrada html    -->
+     <link href="css/entrada.css" rel="stylesheet" type="text/css">
+   <link href="css/normalize.css" rel="stylesheet" type="text/css">-->
+    
+<!--libreria de animacion.css-->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">    
+    
+
+ 
+    
+  <!--  scripts-->
+
+<script type="text/javascript" src="js/comunes.js" ></script>  
+    
+    
+    <!-- libreria para la musica hover escudo script 1.5.2-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>    
+ 
+</head>
+
+<body>
+
+ 
+<div id="Div_Contenedor_Principal">
+    
+<div id="botones">
+  <button  id="refrescar" class="botonSonido" onclick="refrescarPagina();">Refrescar página</button>
+    
+   <button id="sgte" class="botonSonido" onclick="sgte();"><a  href="sssegundaEntrada.html">Avanzar Pagina</a></button>
+    
+    <button id="musicaFondo" class="contact100-form-btn botonSonido" onmousedown="sonido.play()">Cancion</button>
+    
+    <audio id="btnMusica" preload="auto">
+   <source src="http://ivang-design.com/svg-load/menu/hover.mp3"></source>
+			</audio>  
+</div>
+    
+    
+<div id="avion">
+<marquee  direction="right" scrollamount="65"><img  src="img/avioncito.png" alt=""/></marquee>
+</div>    
+
+ <img id="Imagen_Poblacion" src="img/gente.png"  alt=""/>    
+    
+<div id="contenido_Animado">
+    
+ 
+
+   <div id="paracaidas"><img src="img/parac.png"   alt=""/></div> 
+    
+   <img id="soldado" class="animated backInDown" src="img/soldadito.png"   alt=""/>
+ 
+
+   
+</div>
+
+</div>
+    
+    
+<script>
+	
+		var botonesMusica = $("#btnMusica")[0];
+		$(".botonSonido")
+	.mouseenter(function() {
+		botonesMusica.play();
+	});
+
+	</script>   
+   
+   <script >
+var sonido = new Audio();
+sonido.src="sonidos/genkidama.mp3";
+
+</script>
+     
+</body>
+</html>
